@@ -1,0 +1,993 @@
+
+*,
+*::before,
+*::after 
+	box-sizing: border-box 
+ul[class],
+ol[class] 
+	padding: 0 
+	list-style: none 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd
+	margin: 0
+body 
+	min-height: 100vh 
+	scroll-behavior: smooth 
+	text-rendering: optimizeSpeed 
+	line-height: 1.5 
+	font-family: Raleway 
+	margin: 0 
+	padding: 0 
+	box-sizing: border-box 
+article 
+	& > * 
+		& + * 
+			margin-top: 1em 
+input,
+button,
+a
+	text-decoration: none 
+	color: #a5f3ba   
+a:hover 
+	text-decoration: underline 
+	color: #35e464
+.index_body 
+	background: url("../img/dark_fon.png") center center/cover no-repeat 
+	margin: 0 auto 
+	padding: 0 
+	-webkit-box-sizing: border-box 
+	box-sizing: border-box 
+.info_body_ 
+	width: 100% 
+	background: url("../img/dark_fon.png") center center/cover no-repeat 
+	margin: 0 auto 
+	padding: 0 
+	-webkit-box-sizing: border-box 
+	box-sizing: border-box 
+* 
+	-webkit-box-sizing: border-box 
+	box-sizing: border-box 
+li 
+	list-style-type: none 
+	padding-right: 121px 
+nav 
+	z-index: 1 
+	font-weight: 500 
+	font-size: 18px 
+	padding-top: 20px 
+	vertical-align: center 
+	-ms-flex-line-pack: center 
+	align-content: center 
+	-webkit-box-pack: justify 
+	-ms-flex-pack: justify 
+	justify-content: space-between 
+	height: 70px 
+	display: -webkit-box 
+	display: -ms-flexbox 
+	display: flex 
+	background: rgba(0, 37, 18, .9) 
+	.nav_link 
+		.link 
+			text-decoration: none 
+			color: #a5f3ba 
+			&:hover 
+				text-decoration: underline 
+				color: #35e464 
+	.header-logo 
+		.logo-text 
+			color: #a5f3ba 
+			text-decoration: none 
+			&:hover 
+				text-decoration: underline 
+				color: #35e464 
+				font-size: 19px
+.nav_nav
+	width: 100% 
+ul 
+	display: -webkit-box 
+	display: -ms-flexbox 
+	display: flex 
+.header-logo 
+	padding-left: 131px 
+	img 
+		padding-bottom: 3px 
+.header 
+	background-size: contain 
+	background-size: 100% 100% 
+	background-position: top center 
+	overflow: hidden 
+	flex-wrap: wrap 
+	width: 100% 
+	font-family: Raleway 
+	height: 655px 
+	background: url("../img/header.png") center center/cover no-repeat fixed
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3))
+header 
+	.header-title 
+		height: 100px 
+		width: 650px 
+		margin-top: 131px 
+		color: #a5f3ba 
+		font-size: 55px 
+		font-weight: 700 
+		text-align: left
+		animation-name: leftToRight
+		animation-duration: 2s
+		// animation-delay: 0.3s
+		animation-timing-function: ease-in
+	.header-btn
+		animation-name: BtnToUp
+		animation-duration: .5s
+		animation-delay: .2s
+		animation-timing-function: out
+		border-radius: 40px 
+		margin-left: 150px 
+		width: 225px 
+		height: 50px 
+		background: #002f16
+		margin-top: 186px 
+		background: #002f16 
+		border: 0 
+		font-size: 22px 
+		font-weight: 600 
+		line-height: 19px 
+		text-align: center 
+		color: #a5f3ba
+		position: relative
+		&:hover
+			transform: translateY(-4px)
+			background: rgb(0, 84, 32)
+			text-decoration: underline
+			&::after
+				opacity: 0
+				transform: scaleX(1.5) scaleY(1.7)
+		&:after
+			transition: .4s all
+			position: absolute
+			left: 0
+			top: 0
+			content: ""
+			background: rgb(0, 84, 32)
+			width: 100%
+			height: 100%
+			border-radius: 40px
+			display: inline-block
+			z-index: -1
+	.social 
+		margin-left: auto 
+		text-align: center 
+		width: 250px 
+		margin-top: 100px 
+		.social-title 
+			font-size: 18px 
+			margin-right: 9px 
+			padding-bottom: 10px 
+			color: #a5f3ba 
+		.app 
+			padding-right: 5px
+			&:hover
+				transform: scale(1.1) 
+.info 
+	background: #002f16 
+	height: 650px 
+	text-align: center 
+	.info-title 
+		padding-top: 50px 
+		text-transform: uppercase 
+		color: #a5f3ba 
+		border-radius: nullpx 
+		font-family: Playfair Display SC 
+		font-size: 36px 
+		font-weight: 400 
+		line-height: 48px 
+	.info-subtitle 
+		color: #a5f3ba 
+		text-align: center 
+		left: 500px 
+		top: 859px 
+		border-radius: nullpx 
+		padding-top: 35px 
+		font-size: 25px 
+		font-weight: 600 
+		line-height: 34px 
+	.info-text 
+		color: #a5f3ba 
+		padding-top: 50px 
+		text-align: center 
+		height: 500px 
+		width: 1200.0922851563px 
+		border-radius: nullpx 
+		display: inline-block 
+		font-family: Raleway 
+		font-size: 20px 
+		font-weight: 500 
+		line-height: 40px 
+		letter-spacing: .2em 
+	.info-btn 
+		.btn 
+			font-family: Raleway 
+			border-radius: 40px 
+			width: 200px 
+			font-size: 20px 
+			background: #1b6600 
+			font-weight: 600 
+			color: #a5f3ba 
+			&:hover 
+				background: #2a9900 
+				text-decoration: underline 
+.benefits 
+	background: #002f16 
+	position: relative 
+	height: 450px 
+.benefits_title 
+	text-transform: uppercase 
+	padding-top: 50px 
+	color: #a5f3ba 
+	text-align: center 
+	font-family: Playfair Display SC 
+	font-size: 36px 
+	font-weight: 400 
+	letter-spacing: 0em 
+.benefits_block 
+	padding-top: 100px 
+	vertical-align: center 
+	-webkit-box-align: center 
+	-ms-flex-align: center 
+	align-items: center 
+	text-align: center 
+	-webkit-box-pack: center 
+	-ms-flex-pack: center 
+	justify-content: center 
+	margin: 0 auto 
+	height: 200px 
+.benefits_block_text 
+	font-size: 18px 
+	font-weight: 600 
+	padding-top: 10px 
+	color: #a5f3ba 
+.benefits_block_img 
+	margin: 0 auto 
+	-webkit-box-align: center 
+	-ms-flex-align: center 
+	align-items: center 
+	text-align: center 
+	-webkit-box-pack: center 
+	-ms-flex-pack: center 
+	justify-content: center 
+	background: #005420 
+	border-radius: 50% 
+	width: 150px 
+	height: 150px 
+	img 
+		margin-top: 15% 
+		width: 100px 
+		height: 100px 
+.buy 
+	-webkit-box-pack: justify 
+	-ms-flex-pack: justify 
+	justify-content: space-between 
+	height: 1500px 
+	background: #002f16 
+	.card
+		color: #A5F3BA 
+		margin-left: 70px 
+		background: #005420 
+		margin-top: 50px
+		&-img-top
+			&:hover
+				// transform: scale(1.1) 
+		.btn-success 
+			border-radius: 40px 
+			font-family: Raleway 
+			color: #A5F3BA 
+			font-size: 18px 
+			border: 0 
+			font-weight: 500 
+			background: #002f16 
+			margin-top: 15px 
+			display: block 
+			-webkit-box-pack: center 
+			-ms-flex-pack: center 
+			justify-content: center 
+			&:hover
+				transform: translateY(-2px)
+				color: #35e464 
+				background: #007537 
+				text-decoration: underline
+				&::after
+					opacity: 0
+					transform: scaleX(1.5) scaleY(1.7)
+			&:after
+				transition: .4s all
+				position: absolute
+				left: 0
+				top: 0
+				content: ""
+				background: #007537 
+				width: 100%
+				height: 100%
+				border-radius: 40px
+				display: inline-block
+				z-index: -1
+		.stars 
+			padding-top: 10px 
+			text-align: center 
+			cursor: pointer 
+	.card-title 
+		color: #A5F3BA 
+		text-align: center 
+.buy_title 
+	padding-top: 50px 
+	font-family: Playfair Display SC 
+	font-size: 36px 
+	font-weight: 400 
+	letter-spacing: 0em 
+	text-align: center 
+	color: #a5f3ba 
+.footer 
+	background: #002411 
+	height: 140px 
+	background: #002411 
+	height: 140px 
+	.apps 
+		width: 250px 
+		padding-top: 50px 
+		width: 250px 
+		padding-top: 50px 
+		.app 
+			padding-top: 10px 
+			padding-right: 5px 
+			padding-top: 10px 
+			padding-right: 5px
+			&:hover
+				transform: scale(1.1) 
+	.apps-title 
+		padding-left: 30px 
+		color: #a5f3ba 
+		font-family: Raleway 
+		font-size: 14px 
+		font-weight: 400 
+		line-height: 16px 
+		letter-spacing: 0em 
+		padding-left: 30px 
+		color: #a5f3ba 
+		font-family: Raleway 
+		font-size: 14px 
+		font-weight: 400 
+		line-height: 16px 
+		letter-spacing: 0em 
+	.footer_text 
+		margin-left: 240px 
+		padding-top: 75px 
+		font-family: Raleway 
+		color: #a5f3ba 
+		font-size: 14px 
+		font-weight: 400 
+		line-height: 16px 
+		width: 350px 
+		text-align: center 
+		margin-left: 245px 
+		padding-top: 75px 
+		font-family: Raleway 
+		color: #a5f3ba 
+		font-size: 14px 
+		font-weight: 400 
+		line-height: 16px 
+		width: 350px 
+		text-align: center 
+	.partners 
+		text-align: center 
+		width: 500px 
+		padding-top: 20px 
+		margin-left: 100px 
+		color: #FFF 
+		text-align: center 
+		width: 300px 
+		padding-top: 20px 
+		margin-left: 100px 
+		color: #FFF 
+		.partners_img 
+			margin-left: 100px 
+			padding-top: 15px 
+			margin-left: 100px 
+			padding-top: 15px 
+		.partners_title
+			color: #a5f3ba 
+			font-family: Raleway 
+			font-weight: 600 
+			margin-top: 10px 
+			width: 150px 
+			font-size: 18px 
+			margin-left: 185px 
+			font-family: Raleway 
+			font-weight: 600 
+			margin-top: 10px 
+			width: 150px 
+			font-size: 18px 
+			margin-left: 185px 
+.footer_link 
+	color: #a5f3ba 
+	color: #a5f3ba 
+#dialogoverlay 
+	display: none 
+	opacity: .9 
+	position: fixed 
+	top: 0px 
+	left: 0px 
+	background: #8F6424 	 
+	width: 100% 
+	z-index: 10 
+	display: none 
+	opacity: .5 
+	position: fixed 
+	top: 0px 
+	left: 0px 
+	background: #8F6424 	
+	width: 100% 
+	z-index: 10 
+#dialogbox 
+	text-align: center 
+	display: none 
+	position: fixed 
+	background: #8F6424 
+	border-radius: 7px 
+	width: 550px 
+	z-index: 10 
+	text-align: center 
+	display: none 
+	position: fixed 
+	background: #8F6424 
+	border-radius: 7px 
+	width: 550px 
+	z-index: 10 
+	& > div 
+		background: #FFF 
+		margin: 8px 
+		background: #FFF 
+		margin: 8px 
+		& > #dialogboxhead 
+			font-weight: 900 
+			color: #000 
+			margin: 0 auto 
+			text-align: center 
+			background: #B8812E 
+			font-size: 20px 
+			padding: 10px 
+			font-weight: 900 
+			font-family: Raleway 
+			color: #000 
+			margin: 0 auto 
+			text-align: center 
+			background: #B8812E 
+			font-size: 20px 
+			padding: 10px 
+		& > #dialogboxbody 
+			background: #E5BD80 
+			padding: 20px 
+			color: #000 
+			font-weight: 900 
+			font-size: 40px 
+			background: #E5BD80 
+			padding: 20px 
+			font-family: Raleway 
+			color: #000 
+			font-weight: 900 
+			font-size: 40px 
+		& > #dialogboxfoot 
+			font-size: 16px 
+			font-weight: 900 
+			background: #B8812E 
+			padding: 10px 
+			text-align: right 
+			font-size: 16px 
+			font-weight: 900 
+			background: #B8812E 
+			padding: 10px 
+			text-align: right 
+			button 
+				width: 100px 
+				background: #977035 
+				border: 0 
+				color: #000 
+				font-weight: 900 
+				width: 100px 
+				background: #977035 
+				border: 0 
+				color: #000 
+				font-weight: 900 
+.nav_buy 
+	justify-content: space-between 
+	padding-top: 35px 
+	height: 100px 
+	background: rgba(0, 84, 32, .8) 
+	a 
+		padding-top: 10px 
+		margin-top: 90px 
+	.container 
+		img 
+			margin-bottom: 10px 
+.header_buy 
+	background-size: 100% 100% 
+	flex-wrap: wrap 
+	background-color: #002F16 
+	color: #FFF 
+	height: 950px 
+	.nav_buy 
+		.header_nav_title 
+			padding-left: 5px 
+			font-size: 20px 
+			font-weight: 600 
+			opacity: 1 
+			text-decoration: none 
+			color: #A5F3BA 
+			margin-top: 50px 
+			&:hover 
+				text-decoration: underline 
+				color: #35e464 
+.back_title 
+	padding-top: 10px 
+	font-family: Playfair Display SC 
+	text-align: center 
+	font-size: 22px 
+	font-weight: 600 
+	color: #A5F3BA 
+.buy_ot 
+	background-color: #1C6600 
+	width: 500px 
+	border-radius: 30px 
+	margin-top: 100px 
+.fa-solid 
+	cursor: pointer 
+	color: #A5F3BA 
+	&:hover 
+		color: #35e464 
+.fa-left-long 
+	&:hover 
+		color: #35e464 
+.fa-regular 
+	cursor: pointer 
+	color: #A5F3BA 
+.fa-heart 
+	&:active 
+		.fa-solid 
+			.fa-heart 
+				color: #35e464 
+.star 
+	text-align: center 
+.footer_info 
+	margin-top: 75px 
+.header_info 
+	height: 950px 
+	background-color: #002F16 
+.tea 
+	padding-top: 50px 
+	text-align: center 
+	margin-top: 50px 
+	padding-bottom: 50px 
+	img 
+		border-radius: 40px 
+		width: 400px 
+		height: 350px 
+.like 
+	cursor: pointer 
+	i 
+		&:hover 
+			color: #35e464 
+.buy_menu_head 
+	padding-top: 25px 
+	display: flex 
+	margin-top: 100px 
+	color: #A5F3BA 
+.spice_01 
+	text-decoration: underline 
+	font-size: 22px 
+	padding-left: 50px 
+	margin-right: 15px 
+.spice_02 
+	text-decoration: line-through 
+	font-size: 16px 
+	margin-top: 0 
+	margin-right: 200px 
+.button_buy_menu 
+	margin-left: 100px 
+	margin-top: 20px 
+	text-align: center 
+	width: 250px 
+	background-color: #002F16 
+	border: 0 
+	color: #A5F3BA 
+	height: 50px 
+	border-radius: 40px 
+	font-size: 22px 
+	font-weight: 700 
+	&:hover 
+		text-decoration: underline 
+		background-color: #2a9900 
+		color: #35e464 
+.buy_menu 
+	margin-top: 0 
+	padding-top: 0 
+	border-radius: 30px 
+	background-color: #1C6600 
+	width: 450px 
+.starss 
+	&:hover 
+		color: #35e464 
+.part_img_hover
+	// transition: 2s all
+	&:hover
+		// transform: scale(1.2)
+		background-color: #35e464 
+.stars_buy 
+	margin-left: 160px 
+	margin-top: 15px 
+.star_buy 
+	&:hover 
+		color: #35e464 
+.star_buy_reit 
+	&:hover 
+		color: #35e464 
+.back_title_ 
+	padding-top: 50px 
+	padding-bottom: 50px 
+	font-family: Playfair Display SC 
+	text-align: center 
+	font-size: 22px 
+	font-weight: 600 
+	color: #A5F3BA 
+.buy_menu_ 
+	margin-top: 100px 
+	margin-bottom: 150px 
+	border-radius: 30px 
+	background-color: #1C6600 
+	width: 450px 
+.buy_menu_text 
+	text-align: center 
+	margin-top: 10px 
+	color: #A5F3BA 
+	padding-bottom: 25px 
+	font-size: 16px 
+	font-weight: 600 
+	cursor: pointer 
+.header_info_ 
+	border-radius: 30px 
+	margin-top: 25px 
+	width: 450px 
+	background-color: #1C6600 
+	color: #A5F3BA 
+.info_title 
+	margin-left: 100px 
+	font-size: 22px 
+	padding-top: 25px 
+	padding-left: 50px 
+	font-weight: 700 
+.info_star 
+	font-size: 18px 
+	font-weight: 700 
+	img 
+		padding-bottom: 5px 
+.header_404 
+	background-color: #002F16 
+	height: 850px 
+.info_body 
+	padding-top: 10px 
+	padding-left: 50px 
+	display: flex 
+	padding-bottom: 25px 
+	img 
+		vertical-align: center 
+		padding-right: 3px 
+.star_reit 
+	font-size: 22px 
+	font-weight: 700 
+.info_subtitle 
+	padding-top: 3px 
+	font-size: 16px 
+	font-weight: 600 
+	padding-left: 25px 
+.description 
+	color: #A5F3BA 
+	padding-left: 30px 
+	font-size: 16px 
+	font-weight: 500 
+	padding-top: 10px 
+.logo_link 
+	color: #A5F3BA 
+	text-decoration: none 
+	&:hover 
+		color: #35e464 
+		text-decoration: underline 
+.Logo 
+	font-size: 22px 
+	font-weight: 700 
+	cursor: pointer 
+	font-size: 20px 
+	font-weight: 500 
+	margin-left: 15px 
+	img 
+		padding-bottom: 3px 
+		padding-right: 3px 
+.logo 
+	margin-left: 5px 
+	text-decoration: none 
+	color: #A5F3BA 
+	font-size: 20px 
+	font-weight: 600 
+	img 
+		padding-right: 3px 
+		&:hover 
+			color: #35e464 
+	&:hover 
+		text-decoration: underline 
+		color: #35e464 
+.nav_info 
+	display: flex 
+	background: rgba(0, 47, 22, .8) 
+.footer_textt 
+	margin-left: 235px 
+	padding-top: 75px 
+	font-family: Raleway 
+	color: #a5f3ba 
+	font-size: 14px 
+	font-weight: 400 
+	line-height: 16px 
+	width: 350px 
+	text-align: center 
+.info_text_one 
+	padding-top: 25px 
+	margin: 0 auto 
+	width: 1000px 
+	font-family: Raleway 
+	font-size: 22px 
+	font-weight: 600 
+	line-height: 50px 
+	text-align: center 
+	color: #A5F3BA 
+	font-weight: 500 
+.info_text_two 
+	padding-top: 50px 
+	margin: 0 auto 
+	width: 1000px 
+	font-family: Raleway 
+	font-size: 22px 
+	font-weight: 600 
+	line-height: 50px 
+	text-align: center 
+	color: #A5F3BA 
+	font-weight: 500 
+.info_btn_back 
+	margin-bottom: 100px 
+	background: #005420 
+	border-radius: 80px 
+	border: 0 
+	width: 200px 
+	height: 35px 
+	color: #A5F3BA 
+	text-align: center 
+	margin: 0 auto 
+	display: block 
+	margin-top: 75px 
+	font-size: 18px 
+	font-weight: 700 
+	&:hover 
+		background-color: #2a9900 
+		color: #35e464 
+.link_buy 
+	&:hover 
+		color: #35e464 
+.info_title_tea 
+	text-transform: uppercase 
+	padding-top: 50px 
+	color: #a5f3ba 
+	text-align: center 
+	font-family: Playfair Display SC 
+	font-size: 36px 
+	font-weight: 500 
+	letter-spacing: 0em
+.partner__img
+	width: 100% 
+.hamburger
+	display: none
+#menu__toggle 
+	opacity: 0 
+.menu__btn 
+	display: flex 
+	align-items: center 
+	position: fixed 
+	top: 20px 
+	left: 20px 
+	width: 26px 
+	height: 26px 
+	cursor: pointer 
+	z-index: 1 
+	& > span 
+		&::before 
+			content: '' 
+			top: -8px 
+		&::after 
+			content: '' 
+			top: 8px 
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after 
+	display: block 
+	position: absolute 
+	width: 100% 
+	height: 2px 
+	background-color: #616161 
+.menu__box 
+	display: block 
+	position: fixed 
+	visibility: hidden 
+	top: 0 
+	left: -100% 
+	width: 300px 
+	height: 100% 
+	margin: 0 
+	padding: 80px 0 
+	list-style: none 
+	text-align: center 
+	background-color: #ECEFF1 
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2) 
+.menu__item 
+	display: block 
+	padding: 12px 24px 
+	color: #333 
+	font-family: 'Roboto', sans-serif 
+	font-size: 20px 
+	font-weight: 600 
+	text-decoration: none 
+	&:hover 
+		background-color: #CFD8DC 
+#menu__toggle 
+	&:checked 
+		& ~ .menu__btn 
+			& > span 
+				transform: rotate(45deg) 
+				&::before 
+					top: 0 
+					transform: rotate(0) 
+				&::after 
+					top: 0 
+					transform: rotate(90deg) 
+		& ~ .menu__box 
+			visibility: visible 
+			left: 0 
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after 
+	transition-duration: .25s 
+.menu__box 
+	transition-duration: .25s 
+.menu__item 
+	transition-duration: .25s 
+// .image-parlax 
+// 	width: 50% 
+// 	cursor: pointer 
+// .image-container 
+// 	-webkit-transform-style: preserve-3d 
+// 	transform-style: preserve-3d 
+// 	-webkit-perspective: 1000px 
+// 	perspective: 1000px 
+// 	.back-side 
+// 		-webkit-transform: rotateY(180deg) 
+// 		transform: rotateY(180deg) 
+// 		-webkit-transform-style: preserve-3d 
+// 		transform-style: preserve-3d 
+// 	.front-side 
+// 		-webkit-transform: rotateY(0deg) 
+// 		transform: rotateY(0deg) 
+// 		-webkit-transform-style: preserve-3d 
+// 		transform-style: preserve-3d 
+// 	&:hover 
+// 		.back-side 
+// 			-webkit-transform: rotateY(0deg) 
+// 			transform: rotateY(0deg) 
+// 			-webkit-transform-style: preserve-3d 
+// 			transform-style: preserve-3d 
+// 		.front-side 
+// 			-webkit-transform: rotateY(-180deg) 
+// 			transform: rotateY(-180deg) 
+// 			-webkit-transform-style: preserve-3d 
+// 			transform-style: preserve-3d 
+// .front-side, .back-side 
+// 	background-size: cover 
+// 	background-position: center 
+// 	min-height: 350px 
+// 	height: auto 
+// 	border-radius: 50% 
+// 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25) 
+// 	text-align: center 
+// 	color: #fff 
+// 	font-size: 1.5rem 
+// 	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	-webkit-backface-visibility: hidden 
+// 	backface-visibility: hidden 
+// .back-side 
+// 	background: #343434 
+// 	background: -webkit-linear-gradient(45deg,  #343434 0%,#000000 100%) 
+// 	background: -o-linear-gradient(45deg,  #343434 0%,#000000 100%) 
+// 	background: linear-gradient(45deg,  #343434 0%,#000000 100%) 
+// 	position: absolute 
+// 	top: 0 
+// 	left: 0 
+// 	width: 100% 
+// .front-side 
+// 	&:after 
+// 		position: absolute 
+// 		top: 0 
+// 		left: 0 
+// 		z-index: 1 
+// 		width: 100% 
+// 		height: 100% 
+// 		content: '' 
+// 		display: block 
+// 		opacity: .6 
+// 		background-color: #000 
+// 		-webkit-backface-visibility: hidden 
+// 		backface-visibility: hidden 
+// 		border-radius: 50% 
+// 	.inner 
+// 		p 
+// 			font-size: 2rem 
+// 			margin-bottom: 2rem 
+// 			position: relative 
+// 			&:after 
+// 				content: '' 
+// 				width: 4rem 
+// 				height: 1px 
+// 				position: absolute 
+// 				background: #C6D4DF 
+// 				display: block 
+// 				left: 0 
+// 				right: 0 
+// 				margin: 0 auto 
+// 				bottom: -.75rem 
+// 		span 
+// 			color: rgba(255,255,255,0.7) 
+// 			font-family: 'Montserrat' 
+// 			font-weight: 300 
+// .image-container:hover .front-side,
+// .image-container:hover .back-side 
+// 	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// 	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1) 
+// .inner
+// 	-webkit-transform: translateY(-50%) translateZ(60px) scale(0.94) 
+// 	transform: translateY(-50%) translateZ(60px) scale(0.94) 
+// 	top: 50% 
+// 	position: absolute 
+// 	left: 0 
+// 	width: 100% 
+// 	padding: 2rem 
+// 	-webkit-box-sizing: border-box 
+// 	box-sizing: border-box 
+// 	outline: 1px solid transparent 
+// 	-webkit-perspective: inherit 
+// 	perspective: inherit 
+// 	z-index: 2 
+// .card-img, .card-img-bottom, .card-img-top
+// 	&:hover
+// 		transform: scale(1.1)
+.footer .partners .partners_img
+	&:hover
+		transform: scale(1.1)
+
